@@ -4,32 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Angelina's Nail and Beauty Salon</title>
 </head>
 
 <body>
-    <header>
-        <h1>Angelina's Nail and Beauty Salon</h1>
-        <nav>
-            <ul>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Angelina's Salon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="text-center my-4">
+        <h1>Angelina's Nail and Beauty Salon</h1>
+        <p class="lead">Luxury nail care by expert technicians</p>
     </header>
 
-
-    <p>Luxury nail care by expert technicians</p>
-    <img src="manicures.jpg" width="800px" alt="manicures" class="center-img">
-
-    <div= class="salon-info">
-        <p>12 Elm Grove, Portsmouth</p>
-        <p>Mon- Sat 9:00- 18:00</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <img src="manicures.jpg" class="img-fluid rounded mb-4" alt="manicures">
+            </div>
         </div>
 
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center salon-info">
+                <p>12 Elm Grove, Portsmouth</p>
+                <p>Mon–Sat 9:00–18:00</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
